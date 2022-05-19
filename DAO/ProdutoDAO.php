@@ -68,6 +68,7 @@ class ProdutoDAO
         $stmt->bindValue(1, $model->nome);
         $stmt->bindValue(2, $model->descricao);
         $stmt->bindValue(3, $model->preco);
+        $stmt->bindValue(4, $model->id);
         $stmt->execute();
     }
 
@@ -80,7 +81,7 @@ class ProdutoDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("ProdutoModel"); // Retornando um objeto específico PessoaModel
+        return $stmt->fetchObject("ProdutoModel"); // Retornando um objeto específico ProdutoModel
     }
 
 
