@@ -38,6 +38,9 @@ class ProdutoController
         
 
         $produto = new ProdutoModel();
+
+        
+        $produto->id = $_POST['id'];
         $produto->nome = $_POST['nome'];
         $produto->descricao = $_POST['descricao'];
         $produto->preco = $_POST['preco'];

@@ -68,12 +68,15 @@ class ProdutoDAO
         $stmt->bindValue(1, $model->nome);
         $stmt->bindValue(2, $model->descricao);
         $stmt->bindValue(3, $model->preco);
+        $stmt->bindValue(4, $model->id);
         $stmt->execute();
     }
 
 
     public function selectById(int $id)
     {
+        include_once 'Model/ProdutoModel.php';
+
         $sql = "SELECT * FROM produto WHERE id = ?";
 
         $stmt = $this->conexao->prepare($sql);

@@ -32,6 +32,8 @@
     </tr>
     <?php endforeach ?>
 
+    
+
     <?php if(count($model->rows) == 0): ?>
             <tr>
                 <td colspan="5">Nenhum registro encontrado.</td>
@@ -40,11 +42,17 @@
 
 </table>
 
+<br>
+<br>
+<center><a style="font-size: 25px; text-decoration: none;" href="/produto/form">Adicionar mais produtos</a>
+
 <style>
     table {
         border: 1 solid black;
         text-align: center;
         font-size: 25px;
+        text-align: center;
+        
     }
     h1{
         font-size: 35;
