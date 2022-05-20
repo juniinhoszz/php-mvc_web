@@ -83,7 +83,7 @@ class PessoaDAO
      */
     public function update(PessoaModel $model)
     {
-        $sql = "UPDATE pessoa SET nome=?, rg=?, cpf=?, data_nascimento=?, email=?, telefone=?, endereco=?,  WHERE id=? ";
+        $sql = "UPDATE pessoa SET nome=?, rg=?, cpf=?, data_nascimento=?, email=?, telefone=?, endereco=? WHERE id=? ";
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $model->nome);
@@ -100,7 +100,7 @@ class PessoaDAO
 
     public function selectById(int $id)
     {
-        include_once 'Model/PessoaModel.php';
+
 
         $sql = "SELECT * FROM pessoa WHERE id = ?";
 

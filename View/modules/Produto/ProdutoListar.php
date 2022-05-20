@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1 align="center">Listagem de produto</h1>
+<h1 align="center">Listagem de Produto</h1>
 <table id="tabela" width="100%" border="1" bgcolor="gainsboro">
     <tr>
         <th>X</th>
@@ -36,7 +36,7 @@
 
     <?php if(count($model->rows) == 0): ?>
             <tr>
-                <td colspan="5">Nenhum registro encontrado.</td>
+            <td colspan="10"><b style="font-size: 30px;">Nenhum registro encontrado.</b></td>
             </tr>
         <?php endif ?>
 
@@ -56,6 +56,9 @@
     }
     h1{
         font-size: 35;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
     }
 </style>
 </body>

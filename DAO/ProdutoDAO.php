@@ -75,7 +75,7 @@ class ProdutoDAO
 
     public function selectById(int $id)
     {
-        include_once 'Model/ProdutoModel.php';
+
 
         $sql = "SELECT * FROM produto WHERE id = ?";
 

@@ -4,7 +4,7 @@ class ProdutoController
 {
     public static function index() 
     {
-        include 'Model/ProdutoModel.php';
+
 
         $model = new ProdutoModel();
         $model->getAllRows();
@@ -16,7 +16,7 @@ class ProdutoController
     public static function form()
     {
 
-        include 'Model/ProdutoModel.php';
+
 
         $model = new ProdutoModel();
 
@@ -33,7 +33,7 @@ class ProdutoController
     public static function save() 
     {
 
-        include 'Model/ProdutoModel.php'; 
+
 
         
 
@@ -52,8 +52,7 @@ class ProdutoController
 
     public static function delete()
     {
-        include 'Model/ProdutoModel.php';
-        include 'DAO/ProdutoDAO.php';
+
 
         $model = new ProdutoDAO();
 

@@ -8,6 +8,9 @@
     <title>Cadastro de Produto</title>
     <style>
         label, input { display: block;}
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     </style>
 </head>
 <body>

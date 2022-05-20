@@ -15,12 +15,11 @@ class PessoaController
      */
     public static function index() 
     {
-        include 'Model/PessoaModel.php';
+
 
         $model = new PessoaModel();
         $model->getAllRows();
 
-        $nome = "Adib";
         include 'View/modules/Pessoa/ListaPessoas.php';
     }
 
@@ -29,6 +28,16 @@ class PessoaController
      */
     public static function form()
     {
+
+
+        $model = new PessoaModel();
+
+        if(isset($_GET['id'])) // Verificando se existe uma variável $_GET
+            $model = $model->getById( (int) $_GET['id']); // Typecast e obtendo o model preenchido vindo da DAO.
+            // Para saber mais sobre Typecast, leia: https://tiago.blog.br/type-cast-ou-conversao-de-tipos-do-php-isso-pode-te-ajudar-muito/
+
+
+
         include 'View/modules/Pessoa/FormPessoa.php';
     }
 
@@ -37,11 +46,13 @@ class PessoaController
      */
     public static function save() {
 
-        include 'Model/PessoaModel.php'; // inclusão do arquivo model.
+
 
         // Abaixo cada propriedade do objeto sendo abastecida com os dados informados
         // pelo usuário no formulário (note o envio via POST)
         $pessoa = new PessoaModel();
+
+        $pessoa->id = $_POST['id'];
         $pessoa->nome = $_POST['nome'];
         $pessoa->rg = $_POST['rg'];
         $pessoa->cpf = $_POST['cpf'];
@@ -62,9 +73,9 @@ class PessoaController
      */
     public static function delete()
     {
-        include 'Model/PessoaModel.php'; // inclusão do arquivo model.
 
-        $model = new PessoaModel();
+
+        $model = new PessoaDAO();
 
         $model->delete( (int) $_GET['id'] ); // Enviando a variável $_GET como inteiro para o método delete
 
