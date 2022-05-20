@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Produtos</title>
+</head>
+<body>
+
+
 <table id="tabela" width="100%" border="1" bgcolor="gainsboro">
     <tr>
         <th>X</th>
@@ -35,4 +46,9 @@
         text-align: center;
         font-size: 25px;
     }
+    h1{
+        font-size: 35;
+    }
 </style>
+</body>
+</html>
