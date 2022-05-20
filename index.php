@@ -1,6 +1,6 @@
 <?php
 
-$uri_parse = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 //echo $uri_parse;
 //echo "<hr />";
@@ -9,7 +9,7 @@ include 'Controller/PessoaController.php';
 include 'Controller/ProdutoController.php';
 include 'Controller/CategoriaController.php';
 
-switch($uri_parse)
+switch($url)
 {
     case '/pessoa':
         PessoaController::index();
