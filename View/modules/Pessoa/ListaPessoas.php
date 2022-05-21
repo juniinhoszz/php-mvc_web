@@ -10,9 +10,9 @@
 <h1 align="center">Listagem de Pessoas</h1>
 <table id="tabela" width="100%" border="1" bgcolor="gainsboro">
     <tr>
-        <th>X</th>
+    <th style="color:red; font-size:15px">Excluir</th>
         <th>Id</th>
-        <th>Nome</th>
+        <th>Nome / Editar</th>
         <th>RG</th>
         <th>Data de Nascimento</th>
         <th>Email</th>
@@ -26,9 +26,9 @@
     <?php foreach($model->rows as $item): ?>
     <tr>
     
-        <td> <a href="/pessoa/delete?id=<?= $item['id'] ?>"> X </a>  </td>
+    <td> <a style="color:red; text-decoration: none;" href="/pessoa/delete?id=<?= $item['id'] ?>"><b> X</b> </a>  </td>
         <td><?= $item['id'] ?></td>
-        <td><a href="/pessoa/form?id=<?= $item['id'] ?>"> <?= $item['nome'] ?> </a></td>
+        <td><a style="text-decoration: none; color:blue;" href="/pessoa/form?id=<?= $item['id'] ?>"><b> <?= $item['nome'] ?> </b></a></td>
         <td><?= $item['rg'] ?></td>
         <td><?= $item['data_nascimento'] ?></td>
         <td><?= $item['email'] ?></td>
@@ -50,7 +50,7 @@
 
 <br>
 <br>
-<center><a style="font-size: 25px; text-decoration: none;" href="/pessoa/form">Adicionar mais produtos</a>
+<center><a href="/pessoa/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar mais pessoas</button></a></center>
 
 <style>
     table {
@@ -65,6 +65,10 @@
     }
     body{
         font-family: Arial, Helvetica, sans-serif;
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
     }
 </style>
 </body>

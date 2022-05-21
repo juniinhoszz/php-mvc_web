@@ -57,4 +57,41 @@ class CategoriaDAO
 
         return $stmt->fetchAll();
     }
+    /** 
+    * Método que recebe o Model preenchido e atualiza no banco de dados.
+     * Note que neste model é necessário ter a propriedade id preenchida.
+     */
+    public function update(CategoriaModel $model)
+    {
+        $sql = "UPDATE categoria SET descricao=? WHERE id=? ";
+
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->bindValue(1, $model->descricao);
+        $stmt->bindValue(2, $model->id);
+
+        $stmt->execute();
+    }
+
+    public function selectById(int $id)
+    {
+
+
+        $sql = "SELECT * FROM categoria WHERE id = ?";
+
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->bindValue(1, $id);
+        $stmt->execute();
+
+        return $stmt->fetchObject("CategoriaModel"); // Retornando um objeto específico PessoaModel
+    }
+
+    public function delete(int $id)
+    {
+        $sql = "DELETE FROM categoria WHERE id = ? ";
+
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->bindValue(1, $id);
+        
+        $stmt->execute();
+    }
 }

@@ -53,6 +53,12 @@ switch($url)
         CategoriaController::save();
     break;
 
+    case '/categoria/delete':
+        CategoriaController::delete();
+    break;
+
+
+    
     default:
         echo "error 404 ";
     break;

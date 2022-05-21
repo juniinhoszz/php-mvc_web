@@ -30,10 +30,12 @@
             <label for="preco">Preço:</label>
             <input name="preco" id="preco" type="is_double" value="<?= $model->preco ?>"/>
 
-
+            <br>
             <button type="submit">Enviar</button>
 
         </fieldset>
     </form>    
+<br>
+    <center><a href="/produto"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Ver listagem de produtos</button></a></center>
 </body>
 </html>

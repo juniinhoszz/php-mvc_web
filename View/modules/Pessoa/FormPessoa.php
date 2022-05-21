@@ -39,10 +39,12 @@
 
             <label for="endereco">Endereço:</label>
             <input name="endereco" id="endereco" type="text" value="<?= $model->endereco ?>"/>
-
+            <br>
             <button type="submit">Enviar</button>
 
         </fieldset>
     </form>    
+    <br>
+    <center><a href="/produto"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Ver listagem de pessoas</button></a></center>
 </body>
 </html>

@@ -11,9 +11,9 @@
 <h1 align="center">Listagem de Produto</h1>
 <table id="tabela" width="100%" border="1" bgcolor="gainsboro">
     <tr>
-        <th>X</th>
+        <th style="color:red; font-size:15px">Excluir</th>
         <th>Id</th>
-        <th>Nome</th>
+        <th>Nome / Editar</th>
         <th>Descrição</th>
         <th>Preço</th>
         
@@ -23,9 +23,9 @@
     <?php foreach($model->rows as $item): ?>
     <tr>
     
-        <td> <a href="/produto/delete?id=<?= $item['id'] ?>"> X </a>  </td>
+        <td> <a style="color:red; text-decoration: none;" href="/produto/delete?id=<?= $item['id'] ?>"><b> X</b> </a>  </td>
         <td><?= $item['id'] ?></td>
-        <td><a href="/produto/form?id=<?= $item['id'] ?>"> <?= $item['nome'] ?> </a></td>
+        <td><a style="text-decoration: none; color:blue;" href="/produto/form?id=<?= $item['id'] ?>"><b> <?= $item['nome'] ?> </b></a></td>
         <td><?= $item['descricao'] ?></td>
         <td><?= $item['preco'] ?></td>
         
@@ -44,7 +44,7 @@
 
 <br>
 <br>
-<center><a style="font-size: 25px; text-decoration: none;" href="/produto/form">Adicionar mais produtos</a>
+<center><a href="/produto/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar mais produtos</button></a></center>
 
 <style>
     table {
@@ -53,12 +53,19 @@
         font-size: 25px;
         text-align: center;
         
+        
+        
+        
     }
     h1{
         font-size: 35;
     }
     body{
         font-family: Arial, Helvetica, sans-serif;
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
     }
 </style>
 </body>
