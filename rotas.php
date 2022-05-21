@@ -6,6 +6,7 @@ include 'Controller/PessoaController.php';
 include 'Controller/ProdutoController.php';
 include 'Controller/CategoriaController.php';
 
+
 switch($url)
 {
     case '/pessoa':
@@ -57,9 +58,8 @@ switch($url)
         CategoriaController::delete();
     break;
 
-
     
     default:
-        echo "error 404 ";
+        PgInicialController::index();
     break;
 }

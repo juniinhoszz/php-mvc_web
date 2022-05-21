@@ -45,6 +45,15 @@
 <br>
 <br>
 <center><a href="/produto/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar mais produtos</button></a></center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black; position: absolute;
+    bottom: 0;
+    background-color: gainsboro;
+    width: 99%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;" >Voltar para página inicial</button></a>
 
 <style>
     table {
@@ -52,6 +61,7 @@
         text-align: center;
         font-size: 25px;
         text-align: center;
+        
         
         
         
