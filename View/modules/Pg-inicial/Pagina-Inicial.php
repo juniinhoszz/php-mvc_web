@@ -14,7 +14,9 @@
 <center><a href="/pessoa/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar  pessoas</button></a></center><br>
 <center><a href="/categoria/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar categorias de produtos</button></a></center>
 <br>
-<center><h1><img style="height: 160px; width: 160px; font-size:50px;" src="img\rodrigobocaberta.jpeg">  Rodrigão agradece</h1></center>
+
+<center><b style="font-size:29px;">Rodrigão microfone agradece:</b></center>
+<center><img style="height: 160px; width: 160px; font-size:50px;" src="img\rodrigobocaberta.jpeg"> </center>
 
 
 <style>

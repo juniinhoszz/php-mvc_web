@@ -52,6 +52,14 @@
 <br>
 <center><a href="/pessoa/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar mais pessoas</button></a></center>
 
+<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black; position: absolute;
+    bottom: 0;
+    background-color: gainsboro;
+    width: 99%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;" >Voltar para página inicial</button></a>
+
 <style>
     table {
         border: 1 solid black;
