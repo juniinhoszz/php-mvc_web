@@ -1,5 +1,9 @@
 <?php
 
+namespace Web\DAO;
+use \PDO;
+use Web\Model\ProdutoModel; 
+
 class ProdutoDAO
 {
     

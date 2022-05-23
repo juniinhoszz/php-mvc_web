@@ -1,5 +1,8 @@
 <?php
 
+namespace Web\Model;
+use \Web\DAO\ProdutoDAO;
+
 class ProdutoModel
 {
     public $id, $nome, $descricao, $preco;
@@ -52,7 +55,7 @@ class ProdutoModel
 
     public function delete(int $id)
     {
-        $dao = new PessoaDAO();
+        $dao = new ProdutoDAO();
 
         $dao->delete($id);
     }

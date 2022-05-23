@@ -1,5 +1,10 @@
 <?php
 
+namespace Web\Controller;
+use Web\Model\PessoaModel;
+use Web\DAO\PessoaDAO;
+
+
 /**
  * Classes Controller são responsáveis por processar as requisições do usuário.
  * Isso significa que toda vez que um usuário chama uma rota, um método (função)

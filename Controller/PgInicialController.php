@@ -1,4 +1,7 @@
 <?php
+
+namespace Web\Controller;
+
 Class PgInicialController{
 public static function index() 
     {

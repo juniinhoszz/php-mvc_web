@@ -1,5 +1,9 @@
 <?php
 
+namespace Web\Controller;
+use Web\Model\ProdutoModel;
+use Web\DAO\ProdutoDAO;
+
 class ProdutoController 
 {
     public static function index() 

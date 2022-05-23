@@ -1,5 +1,10 @@
 <?php
 
+namespace Web\Controller;
+use Web\Model\CategoriaModel;
+use Web\DAO\CategoriaDAO;
+
+
 class CategoriaController 
 {
     public static function index() 

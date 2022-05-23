@@ -1,7 +1,17 @@
 <?php 
 
 spl_autoload_register(function ($nome_classe){
-    $classe_controller = 'Controller/' . $nome_classe . '.php';
+
+    echo "Tentou dar include de: " . $nome_classe . "<br />";
+    echo dirname(__FILE__) . "<br />";
+    //  C:\Dev\php-mvc_web/Web\Controller\ProdutoController
+
+
+    include $nome_classe .'.php';
+    
+
+
+    /*$classe_controller = 'Controller/' . $nome_classe . '.php';
     $classe_DAO = 'DAO/' . $nome_classe . '.php';
     $classe_Model = 'Model/' . $nome_classe . '.php';
 
@@ -11,6 +21,6 @@ spl_autoload_register(function ($nome_classe){
         include $classe_DAO;
     }else if(file_exists($classe_Model)){
         include $classe_Model;
-    }
+    }*/
 
 });

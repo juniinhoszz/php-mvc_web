@@ -1,5 +1,10 @@
 <?php
 
+namespace Web\DAO;
+use \PDO;
+use Web\Model\CategoriaModel; 
+
+
 class CategoriaDAO
 {
     

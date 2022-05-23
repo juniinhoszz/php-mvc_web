@@ -1,5 +1,9 @@
 <?php
 
+namespace Web\Model;
+
+use \Web\DAO\PessoaDAO;
+
 class PessoaModel
 {
     /**

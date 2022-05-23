@@ -1,5 +1,10 @@
 <?php
 
+namespace Web\Model;
+
+use \Web\DAO\CategoriaDAO;
+
+
 class CategoriaModel
 {
     public $id, $descricao;
