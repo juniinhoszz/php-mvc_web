@@ -62,8 +62,8 @@ switch($url)
         CategoriaController::delete();
     break;
 
-    
+
     default:
-        PgInicialController::index();
+    include 'View/modules/Pg-inicial\Pagina-Inicial.php';
     break;
 }
