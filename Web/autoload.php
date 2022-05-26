@@ -2,12 +2,14 @@
 
 spl_autoload_register(function ($nome_classe){
 
-    echo "Tentou dar include de: " . $nome_classe . "<br />";
-    echo dirname(__FILE__) . "<br />";
+    //echo "Tentou dar include de: " . $nome_classe . "<br />";
+    //echo "<hr />";
+
+    //echo dirname(__FILE__) . "<br />";
     //  C:\Dev\php-mvc_web/Web\Controller\ProdutoController
 
 
-    include $nome_classe .'.php';
+    include dirname(__FILE__, 2) . '/' . $nome_classe .'.php';
     
 
 

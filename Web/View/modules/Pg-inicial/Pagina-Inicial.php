@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<center><h1 align="center">Página Inicial<h2>Escolha uma opção</h2></h1></center>
+<center><h1 align="center">Página Inicial<h2>Selecione:</h2></h1></center>
 
 <center><a href="/produto/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar produtos</button></a></center><br>
 <center><a href="/pessoa/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar  pessoas</button></a></center><br>

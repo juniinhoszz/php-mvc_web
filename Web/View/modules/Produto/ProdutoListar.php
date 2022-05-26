@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1 align="center">Listagem de Produto</h1>
+<h1 align="center" >Listagem de Produto</h1>
 <table id="tabela" width="100%" border="1" bgcolor="gainsboro">
     <tr>
         <th style="color:red; font-size:15px">Excluir</th>
@@ -76,6 +76,7 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
+        
     }
 </style>
 </body>

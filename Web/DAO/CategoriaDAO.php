@@ -87,7 +87,7 @@ class CategoriaDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("CategoriaModel"); // Retornando um objeto específico PessoaModel
+        return $stmt->fetchObject("Web\Model\CategoriaModel"); // Retornando um objeto específico PessoaModel
     }
 
     public function delete(int $id)

@@ -1,57 +1,28 @@
--- MySQL Workbench Forward Engineering
+-- MySQL Workbench Synchronization
+-- Generated: 2022-05-25 22:23
+-- Model: New Model
+-- Version: 1.0
+-- Project: Name of the project
+-- Author: Usuario
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
--- -----------------------------------------------------
--- Schema db_sistema
--- -----------------------------------------------------
+ALTER SCHEMA `db_sistema`  DEFAULT CHARACTER SET utf8  DEFAULT COLLATE utf8_general_ci ;
 
--- -----------------------------------------------------
--- Schema db_sistema
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `db_sistema` DEFAULT CHARACTER SET utf8 ;
-USE `db_sistema` ;
+ALTER TABLE `db_sistema`.`pessoa` 
+CHARACTER SET = utf8 , COLLATE = utf8_general_ci ;
 
--- -----------------------------------------------------
--- Table `db_sistema`.`pessoa`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_sistema`.`pessoa` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `nome` VARCHAR(255) NOT NULL,
-  `rg` VARCHAR(45) NOT NULL,
-  `cpf` CHAR(11) NOT NULL,
-  `data_nascimento` DATE NOT NULL,
-  `email` VARCHAR(255) NULL,
-  `telefone` VARCHAR(11) NULL,
-  `endereco` VARCHAR(255) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC) VISIBLE,
-  UNIQUE INDEX `rg_UNIQUE` (`rg` ASC) VISIBLE)
-ENGINE = InnoDB;
+ALTER TABLE `db_sistema`.`produto` 
+CHARACTER SET = utf8 , COLLATE = utf8_general_ci ,
+CHANGE COLUMN `descricao` `descricao` TEXT NOT NULL AFTER `nome`;
 
+ALTER TABLE `db_sistema`.`categoria` 
+CHARACTER SET = utf8 , COLLATE = utf8_general_ci ;
 
--- -----------------------------------------------------
--- Table `db_sistema`.`produto`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_sistema`.`produto` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `nome` VARCHAR(45) NOT NULL,
-  `preco` DOUBLE NOT NULL,
-  `descricao` TEXT NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `db_sistema`.`categoria`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_sistema`.`categoria` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `descricao` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ALTER TABLE `db_sistema`.`funcionario` 
+CHARACTER SET = utf8 , COLLATE = utf8_general_ci ;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
