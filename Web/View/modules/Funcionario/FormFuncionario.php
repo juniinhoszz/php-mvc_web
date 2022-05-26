@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pessoa</title>
+    <title>Cadastro de Funcionário</title>
     <style>
         label, input { display: block;}
         body{
@@ -13,29 +13,29 @@
     </style>
 </head>
 <body>
-    <form action="/pessoa/save" method="post">
+    <form action="/funcionario/save" method="post">
         <fieldset>
-            <legend style="color: white;">Cadastro de Pessoa</legend>
+            <legend style=" color:white">Cadastro de Funcionário</legend>
 
             <input type="hidden" value="<?= $model->id ?>" name="id" />
 
             <label for="nome" style="color: white;">Nome:</label>
-            <input name="nome" id="nome" type="text" value="<?= $model->nome ?>" style="background:#484d50; color:white"/>
+            <input name="nome" id="nome" type="text" value="<?= $model->nome ?>" style="background:#484d50; color:white" />
 
             <label for="rg" style="color: white;">RG:</label>
-            <input name="rg" id="rg" type="number" value="<?= $model->rg ?>" style="background:#484d50; color:white"/>
+            <input name="rg" id="rg" type="number" value="<?= $model->rg ?>" style="background:#484d50; color:white" />
 
             <label for="cpf" style="color: white;">CPF:</label>
-            <input name="cpf" id="cpf" type="number" value="<?= $model->cpf ?>" style="background:#484d50; color:white"/>
+            <input name="cpf" id="cpf" type="number" value="<?= $model->cpf ?>" style="background:#484d50; color:white" />
 
             <label for="data_nascimento" style="color: white;">Data Nascimento:</label>
-            <input name="data_nascimento" id="data_nascimento" type="date" value="<?= $model->data_nascimento ?>" style="background:#484d50; color:white"/>
+            <input name="data_nascimento" id="data_nascimento" type="date" value="<?= $model->data_nascimento ?>" style="background:#484d50; color:white" />
 
             <label for="email" style="color: white;">E-mail:</label>
-            <input name="email" id="email" type="email" value="<?= $model->email ?>" style="background:#484d50; color:white"/>
+            <input name="email" id="email" type="email" value="<?= $model->email ?>" style="background:#484d50; color:white" />
 
             <label for="telefone" style="color: white;">Telefone:</label>
-            <input name="telefone" id="telefone" type="tel" value="<?= $model->telefone ?>" style="background:#484d50; color:white"/>
+            <input name="telefone" id="telefone" type="tel" value="<?= $model->telefone ?>" style="background:#484d50; color:white" />
 
             <label for="endereco" style="color: white;">Endereço:</label>
             <input name="endereco" id="endereco" type="text" value="<?= $model->endereco ?>" style="background:#484d50; color:white"/>
@@ -45,7 +45,7 @@
         </fieldset>
     </form>    
     <br>
-    <center><a href="/pessoa"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Ver listagem de pessoas</button></a></center>
+    <center><a href="/funcionario"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Ver listagem de funcionários</button></a></center>
 
     <a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
     bottom: 0;
@@ -58,6 +58,9 @@
         body{
             background-color: #2e2e2e;
         }
+        
+
+
     </style>
 
 </body>

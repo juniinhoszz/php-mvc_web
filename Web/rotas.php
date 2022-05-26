@@ -3,6 +3,7 @@
 use Web\Controller\PessoaController;
 use Web\Controller\ProdutoController;
 use Web\Controller\CategoriaController;
+use Web\Controller\FuncionarioController;
 use Web\Controller\PgInicialController;
 
 
@@ -13,6 +14,7 @@ $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch($url)
 {
+    ## ROTAS PARA PESSOA
     case '/pessoa':
         PessoaController::index();
     break;
@@ -62,6 +64,23 @@ switch($url)
         CategoriaController::delete();
     break;
 
+    ## ROTAS PARA FUNCIONARIO
+
+    case '/funcionario':
+        FuncionarioController::index();
+    break;
+
+    case '/funcionario/form':
+        FuncionarioController::form();
+    break;
+
+    case '/funcionario/save':
+        FuncionarioController::save();
+    break;
+
+    case '/funcionario/delete':
+        FuncionarioController::delete();
+    break;
 
     default:
     include 'View/modules/Pg-inicial\Pagina-Inicial.php';

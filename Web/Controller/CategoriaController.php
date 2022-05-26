@@ -34,7 +34,7 @@ class CategoriaController
     public static function save() 
     {
 
-        include 'Model/CategoriaModel.php'; 
+         
 
 
         $categoria = new CategoriaModel();

@@ -7,24 +7,21 @@
     <title>Listagem de Categorias</title>
 </head>
 <body>
-<h1 align="center">Listagem de Categorias</h1>
+<h1 align="center" style="color:white" >Listagem de Categorias</h1>
 <table id="tabela" width="100%" border="1" bgcolor="gainsboro">
     <tr>
-    <th style="color:red; font-size:15px">Excluir</th>
-        <th>Id</th>
-        <th>Descrição / Editar</th>
+    <th style="color:white; font-size:15px">Excluir</th>
+        <th style="color:white">Id</th>
+        <th style="color:white">Descrição / Editar</th>
         
-        
-        
-
     </tr>
 
     <?php foreach($model->rows as $item): ?>
     <tr>
     
     <td> <a style="color:red; text-decoration: none;" href="/categoria/delete?id=<?= $item['id'] ?>"><b> X</b> </a>  </td>
-        <td><?= $item['id'] ?></td>
-        <td><a style="text-decoration: none; color:blue;" href="/categoria/form?id=<?= $item['id'] ?>"><b> <?= $item['descricao'] ?> </b></a></td>
+        <td style="color:white"><?= $item['id'] ?></td>
+        <td><a style="text-decoration: none; color:aqua;" href="/categoria/form?id=<?= $item['id'] ?>"><b> <?= $item['descricao'] ?> </b></a></td>
         
         
     </tr>
@@ -34,7 +31,7 @@
 
     <?php if(count($model->rows) == 0): ?>
             <tr>
-                <td colspan="10"><b style="font-size: 30px;">Nenhum registro encontrado.</b></td>
+                <td colspan="10"><b  style="color:white;font-size: 30px;">Nenhum registro encontrado.</b></td>
             </tr>
         <?php endif ?>
 
@@ -42,11 +39,10 @@
 
 <br>
 <br>
-<center><a href="/categoria/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar mais categorias</button></a></center>
+<center><a href="/categoria/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Adicionar mais categorias</button></a></center>
 
-<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black; position: absolute;
+<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
     bottom: 0;
-    background-color: gainsboro;
     width: 99%;
     height: 100px;    
     text-align: center;
@@ -59,6 +55,7 @@
         text-align: center;
         font-size: 25px;
         text-align: center;
+        background-color: #484d50;
         
     }
     h1{
@@ -70,6 +67,7 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
+        background-color: #2e2e2e;
     }
 </style>
 </body>

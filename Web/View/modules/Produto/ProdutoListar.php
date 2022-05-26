@@ -8,14 +8,14 @@
 </head>
 <body>
 
-<h1 align="center" >Listagem de Produto</h1>
+<h1 align="center" style="color:white" >Listagem de Produto</h1>
 <table id="tabela" width="100%" border="1" bgcolor="gainsboro">
     <tr>
-        <th style="color:red; font-size:15px">Excluir</th>
-        <th>Id</th>
-        <th>Nome / Editar</th>
-        <th>Descrição</th>
-        <th>Preço</th>
+        <th style="color:white; font-size:15px">Excluir</th>
+        <th style="color:white">Id</th>
+        <th style="color:white">Nome / Editar</th>
+        <th style="color:white">Descrição</th>
+        <th style="color:white">Preço</th>
         
 
     </tr>
@@ -24,10 +24,10 @@
     <tr>
     
         <td> <a style="color:red; text-decoration: none;" href="/produto/delete?id=<?= $item['id'] ?>"><b> X</b> </a>  </td>
-        <td><?= $item['id'] ?></td>
-        <td><a style="text-decoration: none; color:blue;" href="/produto/form?id=<?= $item['id'] ?>"><b> <?= $item['nome'] ?> </b></a></td>
-        <td><?= $item['descricao'] ?></td>
-        <td><?= $item['preco'] ?></td>
+        <td style="color:white"><?= $item['id'] ?></td>
+        <td><a style="text-decoration: none; color:aqua;" href="/produto/form?id=<?= $item['id'] ?>"><b> <?= $item['nome'] ?> </b></a></td>
+        <td style="color:white"><?= $item['descricao'] ?></td>
+        <td style="color:white">R$<?= $item['preco'] ?></td>
         
     </tr>
     <?php endforeach ?>
@@ -36,7 +36,7 @@
 
     <?php if(count($model->rows) == 0): ?>
             <tr>
-            <td colspan="10"><b style="font-size: 30px;">Nenhum registro encontrado.</b></td>
+            <td colspan="10"><b style="font-size: 30px; color:white">Nenhum registro encontrado.</b></td>
             </tr>
         <?php endif ?>
 
@@ -44,12 +44,11 @@
 
 <br>
 <br>
-<center><a href="/produto/form"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Adicionar mais produtos</button></a></center>
+<center><a href="/produto/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Adicionar mais produtos</button></a></center>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black; position: absolute;
+<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
     bottom: 0;
-    background-color: gainsboro;
     width: 99%;
     height: 100px;    
     text-align: center;
@@ -61,6 +60,7 @@
         text-align: center;
         font-size: 25px;
         text-align: center;
+        background-color: #484d50;
         
         
         
@@ -76,6 +76,7 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
+        background-color: #2e2e2e;
         
     }
 </style>

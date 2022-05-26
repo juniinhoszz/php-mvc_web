@@ -15,37 +15,46 @@
 </head>
 <body>
     <form action="/produto/save" method="post">
-        <fieldset>
-            <legend>Cadastro de Produto</legend>
+        <fieldset >
+            <legend style="color: white;">Cadastro de Produto</legend>
             
             
             <input type="hidden" value="<?= $model->id ?>" name="id" />
 
-            <label for="nome">Nome:</label>
-            <input name="nome" id="nome" type="text" value="<?= $model->nome ?>" />
+            <label for="nome" style="color: white;">Nome:</label>
+            <input name="nome" id="nome" type="text" value="<?= $model->nome ?>" style="background:#484d50; color:white"/>
 
-            <label for="descricao">Descrição:</label>
-            <input name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>"/>
+            <label for="descricao" style="color: white;">Descrição:</label>
+            <input name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>" style="background:#484d50; color:white"/>
 
-            <label for="preco">Preço:</label>
-            <input name="preco" id="preco" type="is_double" value="<?= $model->preco ?>"/>
+            <label for="preco" style="color: white;">Preço:</label>
+            <input name="preco" id="preco" type="is_double" value="<?= $model->preco ?>" style="background:#484d50; color:white"/>
 
             <br>
-            <button type="submit">Enviar</button>
+            <button type="submit"  style="background-color:#484d50 ;">Enviar</button>
 
         </fieldset>
     </form>    
 <br>
-    <center><a href="/produto"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black;" >Ver listagem de produtos</button></a></center>
+    <center><a href="/produto"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Ver listagem de produtos</button></a></center>
     
 
-<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:gainsboro;border: 1 solid black; position: absolute;
+<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
     bottom: 0;
-    background-color: gainsboro;
     width: 99%;
     height: 100px;    
     text-align: center;
     line-height: 100px;" >Voltar para página inicial</button></a>
+
+    <style>
+        body{
+            background-color: #2e2e2e;
+        }
+        
+
+
+    </style>
+
 
 </body>
 </html>

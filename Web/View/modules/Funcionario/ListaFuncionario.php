@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de Pessoas</title>
+    <title>Listagem de Funcionários</title>
 </head>
 <body>
-<h1 align="center" style="color:white;">Listagem de Pessoas</h1>
+<h1 align="center" style="color:white">Listagem de Funcionários</h1>
 <table id="tabela" width="100%" border="1" bgcolor="gainsboro">
     <tr>
     <th style="color:white; font-size:15px">Excluir</th>
@@ -26,9 +26,9 @@
     <?php foreach($model->rows as $item): ?>
     <tr>
     
-    <td> <a style="color:red; text-decoration: none;" href="/pessoa/delete?id=<?= $item['id'] ?>"><b> X</b> </a>  </td>
+    <td> <a style="color:red; text-decoration: none;" href="/funcionario/delete?id=<?= $item['id'] ?>"><b> X</b> </a>  </td>
         <td style="color:white"><?= $item['id'] ?></td>
-        <td><a style="text-decoration: none; color:aqua;" href="/pessoa/form?id=<?= $item['id'] ?>"><b> <?= $item['nome'] ?> </b></a></td>
+        <td><a style="text-decoration: none; color:aqua;" href="/funcionario/form?id=<?= $item['id'] ?>"><b> <?= $item['nome'] ?> </b></a></td>
         <td style="color:white"><?= $item['rg'] ?></td>
         <td style="color:white"><?= $item['data_nascimento'] ?></td>
         <td style="color:white"><?= $item['email'] ?></td>
@@ -42,7 +42,7 @@
 
     <?php if(count($model->rows) == 0): ?>
             <tr>
-                <td colspan="10"><b style="font-size: 30px; color:white">Nenhum registro encontrado.</b></td>
+                <td colspan="10"><b style="color:white;font-size: 30px;">Nenhum registro encontrado.</b></td>
             </tr>
         <?php endif ?>
 
@@ -50,7 +50,7 @@
 
 <br>
 <br>
-<center><a href="/pessoa/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Adicionar mais pessoas</button></a></center>
+<center><a href="/funcionario/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Adicionar mais funcionários</button></a></center>
 
 <a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
     bottom: 0;
