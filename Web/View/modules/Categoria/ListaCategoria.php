@@ -39,14 +39,14 @@
 
 <br>
 <br>
-<center><a href="/categoria/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Adicionar mais categorias</button></a></center>
+<center><a href="/categoria/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Adicionar mais categorias</button></a></center>
 
 <a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
     bottom: 0;
     width: 99%;
     height: 100px;    
     text-align: center;
-    line-height: 100px;" >Voltar para página inicial</button></a>
+    line-height: 100px;color:white" >Voltar para página inicial</button></a>
 
 
 <style>

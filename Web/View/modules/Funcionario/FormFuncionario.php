@@ -20,39 +20,39 @@
             <input type="hidden" value="<?= $model->id ?>" name="id" />
 
             <label for="nome" style="color: white;">Nome:</label>
-            <input name="nome" id="nome" type="text" value="<?= $model->nome ?>" style="background:#484d50; color:white" />
+            <input name="nome" id="nome" type="text" value="<?= $model->nome ?>" style="background:#484d50; color:white; height:20px;" />
 
             <label for="rg" style="color: white;">RG:</label>
-            <input name="rg" id="rg" type="number" value="<?= $model->rg ?>" style="background:#484d50; color:white" />
+            <input name="rg" id="rg" type="number" value="<?= $model->rg ?>" style="background:#484d50; color:white; height:20px;" />
 
             <label for="cpf" style="color: white;">CPF:</label>
-            <input name="cpf" id="cpf" type="number" value="<?= $model->cpf ?>" style="background:#484d50; color:white" />
+            <input name="cpf" id="cpf" type="number" value="<?= $model->cpf ?>" style="background:#484d50; color:white; height:20px;" />
 
             <label for="data_nascimento" style="color: white;">Data Nascimento:</label>
-            <input name="data_nascimento" id="data_nascimento" type="date" value="<?= $model->data_nascimento ?>" style="background:#484d50; color:white" />
+            <input name="data_nascimento" id="data_nascimento" type="date" value="<?= $model->data_nascimento ?>" style="background:#484d50; color:white; height:20px;" />
 
             <label for="email" style="color: white;">E-mail:</label>
-            <input name="email" id="email" type="email" value="<?= $model->email ?>" style="background:#484d50; color:white" />
+            <input name="email" id="email" type="email" value="<?= $model->email ?>" style="background:#484d50; color:white; height:20px;" />
 
             <label for="telefone" style="color: white;">Telefone:</label>
-            <input name="telefone" id="telefone" type="tel" value="<?= $model->telefone ?>" style="background:#484d50; color:white" />
+            <input name="telefone" id="telefone" type="tel" value="<?= $model->telefone ?>" style="background:#484d50; color:white; height:20px;" />
 
             <label for="endereco" style="color: white;">Endereço:</label>
-            <input name="endereco" id="endereco" type="text" value="<?= $model->endereco ?>" style="background:#484d50; color:white"/>
+            <input name="endereco" id="endereco" type="text" value="<?= $model->endereco ?>" style="background:#484d50; color:white; height:20px;"/>
             <br>
-            <button type="submit" style="background-color:#484d50 ;">Enviar</button>
+            <button type="submit" style="background-color:#484d50 ; height:35px; width:65px; font-size:17px;color:white">Enviar</button>
 
         </fieldset>
     </form>    
     <br>
-    <center><a href="/funcionario"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Ver listagem de funcionários</button></a></center>
+    <center><a href="/funcionario"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Ver listagem de funcionários</button></a></center>
 
     <a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
     bottom: 0;
     width: 99%;
     height: 100px;    
     text-align: center;
-    line-height: 100px;" >Voltar para página inicial</button></a>
+    line-height: 100px;color:white" >Voltar para página inicial</button></a>
 
 <style>
         body{

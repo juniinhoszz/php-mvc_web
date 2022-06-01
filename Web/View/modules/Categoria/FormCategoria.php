@@ -21,22 +21,22 @@
 
 
             <label for="descricao" style="color: white;">Descrição:</label>
-            <input name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>" style="background:#484d50; color:white"/>
+            <input name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>" style="background:#484d50; color:white; height:20px;"/>
 
             <br>
-            <button type="submit" style="background-color:#484d50 ;">Enviar</button>
+            <button type="submit" style="background-color:#484d50 ; height:40px; width:70px; font-size:17px;color:white">Enviar</button>
 
         </fieldset>
     </form>    
     <br>
-    <center><a href="/categoria"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Ver listagem de categorias</button></a></center>
+    <center><a href="/categoria"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Ver listagem de categorias</button></a></center>
 
     <a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
     bottom: 0;
     width: 99%;
     height: 100px;    
     text-align: center;
-    line-height: 100px;" >Voltar para página inicial</button></a>
+    line-height: 100px;color:white" >Voltar para página inicial</button></a>
 
 <style>
         body{

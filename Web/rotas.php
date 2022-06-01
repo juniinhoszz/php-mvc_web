@@ -4,7 +4,7 @@ use Web\Controller\PessoaController;
 use Web\Controller\ProdutoController;
 use Web\Controller\CategoriaController;
 use Web\Controller\FuncionarioController;
-use Web\Controller\PgInicialController;
+
 
 
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);

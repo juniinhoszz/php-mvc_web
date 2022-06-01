@@ -44,7 +44,7 @@
 
 <br>
 <br>
-<center><a href="/produto/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;" >Adicionar mais produtos</button></a></center>
+<center><a href="/produto/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Adicionar mais produtos</button></a></center>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
@@ -52,7 +52,7 @@
     width: 99%;
     height: 100px;    
     text-align: center;
-    line-height: 100px;" >Voltar para página inicial</button></a>
+    line-height: 100px;color:white" >Voltar para página inicial</button></a>
 
 <style>
     table {
